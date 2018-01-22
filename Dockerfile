@@ -1,9 +1,9 @@
 FROM circleci/php:7.1-browsers
 MAINTAINER Jeff Magnusson "jmagnuss@gmail.com"
 
-RUN apt-get update
-RUN apt-get install -y libmcrypt-dev git unzip wget libpng-dev libzip-dev libsqlite3-dev libnss3 libgconf-2-4
-RUN apt-get install -y libfontconfig1 chromium xvfb mysql-client
+RUN sudo apt-get update
+RUN sudo apt-get install -y libmcrypt-dev git unzip wget libpng-dev libzip-dev libsqlite3-dev libnss3 libgconf-2-4
+RUN sudo apt-get install -y libfontconfig1 chromium xvfb mysql-client
 
 # Install extra PHP modules
 RUN sudo pecl channel-update pecl.php.net
