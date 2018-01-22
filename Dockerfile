@@ -1,4 +1,4 @@
-FROM circleci/php:7.1-browser
+FROM circleci/php:7.1-browsers
 MAINTAINER Jeff Magnusson "jmagnuss@gmail.com"
 
 RUN apt-get update
